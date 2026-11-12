@@ -1,7 +1,23 @@
+### Registro de usuario
 POST http://127.0.0.1:3000/auth/register
 Content-Type: application/json
 
 {
-    "name":"prueba"
-    "email":"casa"
+    "name": "prueba",
+    "email": "rjm@hm.com",
+    "password": "123456"
 }
+
+### Login sin conexión a BDD
+POST http://127.0.0.1:3000/auth/login
+Content-Type: application/json
+
+{
+    "email": "rp2@hm.com",
+    "password": "1234567"
+}
+
+### users
+
+GET http://127.0.0.1:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3OTQ0OTM1MjIsImV4cCI6MTc5NDQ5MzU4Mn0.u25eg9YZxbGBVnZ0Qgc1eDBgi2Wa6ajoMref6xxaAOQ
